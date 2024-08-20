@@ -1,7 +1,5 @@
 # ZenSign: Provably Secure Partially Blind Signature Scheme
 
-ZenSign is an implementation of the **Provably Secure Partially Blind Signature Scheme** based on the paper by Masayuki Abe and Tatsuaki Okamoto. This scheme combines privacy and verification, allowing certain information to remain hidden while ensuring other information can be verified.
-
 ZenSign is designed for use in cryptographic protocols focused on privacy, such as digital payment systems, e-voting, and other applications where anonymity is essential.
 
 ## Project Structure
