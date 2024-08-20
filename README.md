@@ -1,12 +1,12 @@
-# NzengiCrypt: Provably Secure Partially Blind Signature Scheme
+# ZenSign: Provably Secure Partially Blind Signature Scheme
 
-NzengiCrypt is an implementation of the **Provably Secure Partially Blind Signature Scheme** based on the paper by Masayuki Abe and Tatsuaki Okamoto. This scheme combines privacy and verification, allowing certain information to remain hidden while ensuring other information can be verified.
+ZenSign is an implementation of the **Provably Secure Partially Blind Signature Scheme** based on the paper by Masayuki Abe and Tatsuaki Okamoto. This scheme combines privacy and verification, allowing certain information to remain hidden while ensuring other information can be verified.
 
-This project can be used for cryptographic protocols focused on privacy, such as digital payment systems, e-voting, and any other applications where anonymity is essential.
+ZenSign is designed for use in cryptographic protocols focused on privacy, such as digital payment systems, e-voting, and other applications where anonymity is essential.
 
 ## Project Structure
 
-NzengiCrypt is built with a modular design, consisting of the following files and modules:
+ZenSign is built with a modular design, consisting of the following files and modules:
 
 - **math_helpers.py**: Contains mathematical helper functions, random number generation, and primality tests.
 - **dsa_helpers.py**: Handles DSA parameter selection and key pair generation.
@@ -17,7 +17,7 @@ NzengiCrypt is built with a modular design, consisting of the following files an
 ## Key Concepts and Mathematical Formulas
 
 ### 1. **Partially Blind Signature**
-   - A partially blind signature allows a signer to sign a message while keeping some parts of the information hidden. This is particularly useful in applications where privacy is needed but certain verifiable information must still be attached to the signature.
+   - A partially blind signature allows a signer to sign a message while keeping some parts of the information hidden. This is particularly useful in applications where privacy is needed, but certain verifiable information must still be attached to the signature.
 
 ### 2. **DSA (Digital Signature Algorithm) Parameters**
    - **p**: A prime number such that \( p - 1 \) is divisible by \( q \).
@@ -52,7 +52,7 @@ NzengiCrypt is built with a modular design, consisting of the following files an
 
 ### 4. **Full Domain Hash (FDH)**
    - The full domain hash function spreads the hash values uniformly across a larger domain, ensuring cryptographic security.
-   - This project uses SHA-256 as the underlying hash function.
+   - ZenSign uses SHA-256 as the underlying hash function.
 
 ## Usage
 
@@ -61,7 +61,7 @@ NzengiCrypt is built with a modular design, consisting of the following files an
 
 ### Example
 
-Here is a simple example of how to use the `NzengiCrypt` modules:
+Here is a simple example of how to use the `ZenSign` modules:
 
 ```python
 from dsa_helpers import choose_parameters
@@ -87,4 +87,4 @@ rho, omega, delta, sigma = user.four(r, c, s, d)
 assert check(rho, omega, delta, sigma, user.z, msg, user.y, params)
 ```
 
-S00N-2
+S00NN-2
